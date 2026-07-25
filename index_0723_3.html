@@ -8,16 +8,21 @@
 
 </head>
 <body>
+    <!-- ここに全角空白がありますが、ないほうがいいです（全角空白は）位置がずれる。JavaScriptの練習では影響がないです。 -->
 　　<h1>見出し</h1>
     <p>ここを書き替えます</p>
 
-    <button onclic="action()">
+    <!-- <button onclic="action()"> -->
+<!-- [植田]　onclickとなるようにスペルを修正しています。 -->
+        <button onclic="action()">
         文字を置き換える
     </button>
     <script>
         function action(){
-            document.querySelector("p")="ここを書き換えました。"
-            TextContent="ここを書き換えました。"
+            // document.querySelector("p")="ここを書き換えました。"
+            // TextContent="ここを書き換えました。"
+            // [植田]　2行を1行で書きます。（テレビに映したときに説明が足りませんでした）
+            document.querySelector("p").TextContent="ここを書き換えました。"
         }
     </script>
 </body>
