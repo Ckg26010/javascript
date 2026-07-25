@@ -7,23 +7,27 @@
     <title>Document</title>
 
 </head>
+
 <body>
     <!-- ここに全角空白がありますが、ないほうがいいです（全角空白は）位置がずれる。JavaScriptの練習では影響がないです。 -->
-　　<h1>見出し</h1>
+    　　<h1>見出し</h1>
     <p>ここを書き替えます</p>
 
     <!-- <button onclic="action()"> -->
-<!-- [植田]　onclickとなるようにスペルを修正しています。 -->
-        <button onclic="action()">
+    <!-- [植田]　onclickとなるようにスペルを修正しています。 -->
+    <button onclick="action()">
         文字を置き換える
     </button>
     <script>
-        function action(){
+        function action() {
             // document.querySelector("p")="ここを書き換えました。"
             // TextContent="ここを書き換えました。"
             // [植田]　2行を1行で書きます。（テレビに映したときに説明が足りませんでした）
-            document.querySelector("p").TextContent="ここを書き換えました。"
+            // 二重引用符の最後が全角になっていますので気を付けてください。
+            // textContextの最初の文字tが大文字になっています。
+            document.querySelector("p").textContent = "ここをかきかえました。"
         }
     </script>
 </body>
+
 </html>
